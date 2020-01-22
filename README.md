@@ -12,4 +12,4 @@ First, the necessary columns were copied for each of the two dataframes, droppin
 Meanwhile, we needed to loop through the ingredients to find which ones contained organic items. This was done using by reducing the branded_food csv into two columns: fdc_id and ingredients. Once the new dataframe was built, a regular expression was used to find the occurrences of the word “organic” (re.compile(“\W*(ORGANIC)\W*”). Using the regular expression inside a for loop all instances of organic ingredients were aggregated into two new columns. These new columns can be used later for further analytical insights.
 
 # Loading the Data
-The data was then loaded into a SQLite database. A connection to the database was established using Jupyter Notebook. Next, we checked to make sure that the connection was valid. We then did a join on our dataframes, combined_df and ingred_df.
+The data was then loaded into a SQLite database. A connection to the database was established using Jupyter Notebook. After making sure that the connection was valid, we then joined the two dataframes - combined_df and ingred_df.
