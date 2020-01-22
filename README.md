@@ -2,7 +2,8 @@
 # Analysis of Ingredients
 A count of organic ingredients in common grocery store products using ETL.
 
-<img width="550" alt="USDAresized" src="https://user-images.githubusercontent.com/46386265/72936736-d4255980-3d35-11ea-8ce4-4722f15801bf.PNG">
+
+<img width="575" alt="USDAresized" src="https://user-images.githubusercontent.com/46386265/72936736-d4255980-3d35-11ea-8ce4-4722f15801bf.PNG">
 
 # Extracting the Data
 The U.S. Department of Agriculture has many datasets related to food, ingredients, and nutrition. The goal of this project was to examine organic ingredients within commonly found foods. We downloaded two particular csv files from the USDA website: “branded_food” and “food.” Each csv file contained 260,370 rows of data.
