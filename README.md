@@ -1,5 +1,5 @@
 # Analysis-of-Ingredients
-A count of organic ingredients in common grocery store products usin ETL.
+A count of organic ingredients in common grocery store products using ETL.
 
 # Extracting the Data
 The U.S. Department of Agriculture has many datasets related to food, ingredients, and nutrition. The goal was to examine a dataset with all food, so we decided to download the CSVs provided on the USDA website. After viewing each of the files, we downloaded two particular csv files: “branded_food” and “food.” Each csv file contained 260,370 rows of data, which was then converted into a pandas dataframes.
