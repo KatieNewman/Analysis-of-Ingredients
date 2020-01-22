@@ -2,6 +2,7 @@
 A count of organic ingredients in common grocery store products using ETL.
 
 
+<img width="66" alt="USDA" src="https://user-images.githubusercontent.com/46386265/72936299-e5219b00-3d34-11ea-92aa-fac3da558e5f.PNG">
 ![Screenshot (8)](https://user-images.githubusercontent.com/46386265/72931714-60cb1a00-3d2c-11ea-91a1-b3cbe2ae8621.png)
 
 # Extracting the Data
