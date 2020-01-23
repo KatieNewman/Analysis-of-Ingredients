@@ -11,11 +11,11 @@ The U.S. Department of Agriculture has many datasets related to food, ingredient
 <img width="700" alt="food_csv" src="https://user-images.githubusercontent.com/46386265/72935846-236a8a80-3d34-11ea-8a86-f7e73fe6e19f.PNG">
 
 # Transforming the Data
-First, the csv files were converted to pandas dataframes. Then, the necessary columns were copied for each of the two dataframes, dropping the columns which were not needed. Next we separated out each of the ingredients in the column called ‘ingredients.’ With the help of ‘str.split’ (to separate by comma) and ‘melt’ (to transform the separated ingredients from columns into rows) we created a new dataframe. Since each product has a different number of ingredients, we were left with a lot of null values. The null values were dropped and we were left with nearly 3.7 million rows of data!
+First, the csv files were converted to pandas dataframes. Then, the necessary columns were copied for each of the two dataframes, dropping the columns which were not needed. Next we separated out each of the ingredients in the column called ‘ingredients.’ With the help of ‘str.split’ (to separate by comma) and ‘melt’ (to transform the separated ingredients from columns into rows) we created a new dataframe. Since each product has a different number of ingredients, we were left with a lot of null values. The null values were dropped and we were left with nearly 4 million rows of data!
 
 Meanwhile, we needed to loop through the ingredients to find which ones contained organic items. This was done by reducing the branded_food csv into two columns: fdc_id and ingredients. Once the new dataframe was built, a regular expression was used to find the occurrences of the word “organic” (re.compile(“\W*(ORGANIC)\W*”). Using the regular expression inside a for loop, all instances of organic ingredients were aggregated into two new columns. 
 
-<img width="625" alt="organic count" src="https://user-images.githubusercontent.com/46386265/72994632-6f194480-3dc5-11ea-8b99-f2ee71304d29.PNG">
+<img width="650" alt="organic count" src="https://user-images.githubusercontent.com/46386265/72994632-6f194480-3dc5-11ea-8b99-f2ee71304d29.PNG">
 
 # Loading the Data
 The data was then loaded into a SQLite database. A connection to the database was established using Jupyter Notebook. After making sure the connection was valid, we joined the dataframes - combined_df and ingred_df. These two new SQLite files can now be queryed for further analytical insight.
