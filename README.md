@@ -15,5 +15,7 @@ First, the csv files were converted to pandas dataframes. Then, the necessary co
 
 Meanwhile, we needed to loop through the ingredients to find which ones contained organic items. This was done by reducing the branded_food csv into two columns: fdc_id and ingredients. Once the new dataframe was built, a regular expression was used to find the occurrences of the word “organic” (re.compile(“\W*(ORGANIC)\W*”). Using the regular expression inside a for loop, all instances of organic ingredients were aggregated into two new columns. 
 
+<img width="625" alt="organic count" src="https://user-images.githubusercontent.com/46386265/72994632-6f194480-3dc5-11ea-8b99-f2ee71304d29.PNG">
+
 # Loading the Data
 The data was then loaded into a SQLite database. A connection to the database was established using Jupyter Notebook. After making sure the connection was valid, we joined the dataframes - combined_df and ingred_df. These two new SQLite files can now be queryed for further analytical insight.
