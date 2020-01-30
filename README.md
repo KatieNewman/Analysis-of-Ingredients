@@ -1,6 +1,6 @@
 
 # Analysis of Ingredients
-A count of organic ingredients in common grocery store products using ETL.
+A count of organic ingredients in common grocery store products using ETL to create a SQLite database.
 
 
 <img width="575" alt="USDAresized" src="https://user-images.githubusercontent.com/46386265/72936736-d4255980-3d35-11ea-8ce4-4722f15801bf.PNG">
